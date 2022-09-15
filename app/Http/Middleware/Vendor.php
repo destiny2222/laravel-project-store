@@ -21,6 +21,6 @@ class Vendor
         if (Auth::guard('vendor')->check()){
             return $next($request);
         }
-        return redirect()->route('vendor.loginform');
+        return redirect()->route('vendor.userloginform');
     }
 }

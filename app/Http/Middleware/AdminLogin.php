@@ -20,7 +20,7 @@ class AdminLogin
     {
         // return $next($request);
         if (Auth::guard('admin')->check()){
-            return redirect()->to(RouteServiceProvider::HOME);
+            return redirect()->to(RouteServiceProvider::ADMIN);
         }
 
         return $next($request);

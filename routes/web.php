@@ -1,15 +1,11 @@
 <?php
 
-use App\Http\Controllers\CartController;
-use App\Http\Controllers\PageController;
-use App\Http\Controllers\ProductController;
-use Illuminate\Http\Request;
 
 
-require __DIR__ .'/admin.php';
-require __DIR__ .'/auth.php';
-require __DIR__ .'/Vendor.php';
-require __DIR__ .'/frontend.php';
+require __DIR__.'/admin.php';
+require __DIR__.'/auth.php';
+require __DIR__.'/Vendor.php';
+require __DIR__.'/frontend.php';
 
 // $items = array(
 //     // ['id'=>1,

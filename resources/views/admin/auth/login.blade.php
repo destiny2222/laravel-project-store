@@ -22,14 +22,14 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-6">
-            <div class="alert alert-primary alert-dismissible fade show t" role="alert">
+            {{-- <div class="alert alert-primary alert-dismissible fade show t" role="alert">
                 @foreach ($errors->all() as $error)
                         <div class="text-start">{{ $error }}</div>
                 @endforeach
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>

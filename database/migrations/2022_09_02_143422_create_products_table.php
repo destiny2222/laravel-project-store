@@ -22,7 +22,7 @@ return new class extends Migration
             $table->integer('discount')->nullable();
             $table->string('SKU')->nullable();
             $table->string('slug')->unique();
-            $table->foreignId('category_id')->constrained()->onDelete()->onUpdate();
+            // $table->foreignId('category_id')->constrained()->onUpdate('CASCADE')->onDelete('CASCADE');
             $table->timestamps();
         });
     }
