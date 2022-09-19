@@ -1,4 +1,4 @@
-@extends('admin.categories.create')
+@extends('admin.layout.menu')
 @section('page-title','Categories')
 @section('page-breadcrumb','Create new category')
 @section('link', route('admin.categories.index'))

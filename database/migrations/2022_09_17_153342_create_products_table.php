@@ -16,13 +16,15 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('image')->nullable();
             $table->text('description')->nullable();
+            $table->string('images')->nullable();
+            $table->integer('discount')->default(0);
             $table->decimal('price')->nullable();
-            $table->integer('discount')->nullable();
+            $table->integer('quantity')->nullable();
             $table->string('SKU')->nullable();
             $table->string('slug')->unique();
-            // $table->foreignId('category_id')->constrained()->onUpdate('CASCADE')->onDelete('CASCADE');
+            $table->string('cover_image')->nullable();
+            $table->foreignId('category_id')->constrained()->onDelete('CASCADE')->onUpdate('CASCADE');
             $table->timestamps();
         });
     }

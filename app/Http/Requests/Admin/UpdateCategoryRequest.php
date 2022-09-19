@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Admin;
 
-use App\Models\Categroy;
+use App\Models\Category;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\Rule;
@@ -32,7 +32,7 @@ class UpdateCategoryRequest extends FormRequest
         ];
     }
 
-    private function storeImage(Categroy $category)
+    private function storeImage(Category $category)
     {
         $fileNameToStore = $category->image;
         if ($this->hasFile('image')){
@@ -52,7 +52,7 @@ class UpdateCategoryRequest extends FormRequest
         }
         return $fileNameToStore;
     }
-    public function updateCategory(Categroy $category)
+    public function updateCategory(Category $category)
     {
 
         try {
@@ -67,4 +67,5 @@ class UpdateCategoryRequest extends FormRequest
             return false;
         }
     }
+
 }

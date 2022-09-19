@@ -2,9 +2,10 @@
 
 namespace App\Http\Requests\Admin;
 
-use App\Models\Categroy;
+use App\Models\Category;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Log;
+
 
 class NewCategoryRequest extends FormRequest
 {
@@ -32,13 +33,15 @@ class NewCategoryRequest extends FormRequest
         ];
     }
 
+   
+
     public function  createNewCategory()
     {
         try {
-            Categroy::create([
+            Category::create([
                 'name'=>$this->name,
                 'slug'=>$this->name,
-                'image'=>upload_single_image('categories')
+                'image'=>upload_single_image('categories', 'image')
             ]);
             return true;
         } catch (\Exception $exception){

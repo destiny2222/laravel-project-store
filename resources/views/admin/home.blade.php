@@ -12,8 +12,8 @@
                 <div class="mini-stat-icon">
                     <i class="dripicons-broadcast bg-soft-primary text-primary float-right h4"></i>
                 </div>
-                <h6 class="text-uppercase mb-3 mt-0">Orders</h6>
-                <h5 class="mb-3">1,687</h5>
+                <h6 class="text-uppercase mb-3 mt-0">Category</h6>
+                <h5 class="mb-3">{{  count(App\Models\Category::get()) }}</h5>
                 <p class="text-muted mb-0"><span class="text-success mr-2"> 12% <i class="mdi mdi-arrow-up"></i> </span> From previous period</p>
             </div>
         </div>
@@ -24,8 +24,8 @@
                 <div class="mini-stat-icon">
                     <i class="dripicons-box bg-soft-primary text-primary float-right h4"></i>
                 </div>
-                <h6 class="text-uppercase mb-3 mt-0">Revenue</h6>
-                <h5 class="mb-3">$ 48,265</h5>
+                <h6 class="text-uppercase mb-3 mt-0">Products</h6>
+                <h5 class="mb-3">{{  count(App\Models\Product::get()) }}</h5>
                 <p class="text-muted mb-0"><span class="text-danger mr-2"> -26% <i class="mdi mdi-arrow-down"></i> </span> From previous period</p>
             </div>
         </div>

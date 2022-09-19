@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 class Category extends Model
 {
     use HasFactory;
-    protected $fillable = ['name','image','slug'];
+    protected $fillable = ['name','slug', 'image'];
 
     public function getSlugAttribute($value)
     {

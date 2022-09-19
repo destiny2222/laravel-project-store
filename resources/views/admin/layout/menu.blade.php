@@ -52,7 +52,8 @@
                                 <div class="col-sm-6">
                                     <div class="float-right d-none d-md-block">
                                         <div class="dropdown">
-                                            <a href="@yield('link', '')" class="btn btn-primary  arrow-none waves-effect waves-light" >
+                                            <a href="@yield('link', '')" 
+                                              class="btn btn-primary  arrow-none waves-effect waves-light" >
                                                 <i class="mdi mdi-settings mr-2"></i> @yield('linkText','')
                                             </a>
                                         </div>
@@ -84,7 +85,7 @@
         <!-- END wrapper -->
 
         @include('admin.layout.right-sidebar')
-
+        @include('sweetalert::alert')
         <!-- jQuery  -->
         <script src="/Admini/assets/js/jquery.min.js"></script>
         <script src="/Admini/assets/js/bootstrap.bundle.min.js"></script>
@@ -108,7 +109,7 @@
 
         <!-- App js -->
         <script src="/Admini/assets/js/app.js"></script>
-        
+        @stack('scripts')
     </body>
 
 </html>

@@ -124,10 +124,13 @@
             <!--Right Action-->
             <div class="col-6 col-sm-6 col-md-6 col-lg-3 align-self-center icons-col text-right d-flex justify-content-end">
                 <!--Search-->
-                <div class="site-search iconset"><i class="icon an an-search-l"></i><span class="tooltip-label">Search</span></div>
+                <div class="site-search iconset">
+                    <i class="icon an an-search-l"></i><span class="tooltip-label">Search</span></div>
                 <!--End Search-->
                 <!--Wishlist-->
-                <div class="wishlist-link iconset"><a href="my-wishlist.html"><i class="icon an an-heart-l"></i><span class="wishlist-count counter d-flex-center justify-content-center position-absolute translate-middle rounded-circle">0</span><span class="tooltip-label">Wishlist</span></a></div>
+                <div class="wishlist-link iconset">
+                    <a href="my-wishlist.html"><i class="icon an an-heart-l"></i>
+                        <span class="wishlist-count counter d-flex-center justify-content-center position-absolute translate-middle rounded-circle">0</span><span class="tooltip-label">Wishlist</span></a></div>
                 <!--End Wishlist-->
                 <!--Setting Dropdown-->
                 <div class="user-link iconset"><i class="icon an an-user-2"></i><span class="tooltip-label">Account</span></div>
@@ -143,7 +146,9 @@
                 <!--Minicart Drawer-->
                 <div class="header-cart iconset">
                     <a href="#" class="site-header__cart btn-minicart" data-bs-toggle="modal" data-bs-target="#minicart-drawer">
-                        <i class="icon an an-cart-l"></i><span class="site-cart-count counter d-flex-center justify-content-center position-absolute translate-middle rounded-circle">2</span><span class="tooltip-label">Cart</span>
+                        <i class="icon an an-cart-l"></i>
+                        <span class="site-cart-count counter d-flex-center justify-content-center 
+                        position-absolute translate-middle rounded-circle">{{ $cartCount }}</span><span class="tooltip-label">Cart</span>
                     </a>
                 </div>
                 <!--End Minicart Drawer-->

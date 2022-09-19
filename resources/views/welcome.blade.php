@@ -82,8 +82,10 @@
                                                     <form action="{{ route('addTocart') }}" method="post">
                                                         @csrf
                                                         <input type="hidden" name="product_id" value="{{ $item->id }}">
-                                                        <button type="submit" class="btn-icon btn btn-addto-cart " href="#pro-addtocart-popup">
-                                                            <i class="icon an an-cart-l"></i> <span class="tooltip-label">Add to Cart</span>
+                                                        <button type="submit" class="btn-icon btn btn-addto-cart " 
+                                                            href="#pro-addtocart-popup">
+                                                            <i class="icon an an-cart-l"></i> 
+                                                            <span class="tooltip-label">Add to Cart</span>
                                                         </button>
                                                     </form>
                                                     <!--end Cart Button-->
